@@ -4,32 +4,33 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Five Design Components',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        There are five design components to a CoinJoin wallet. This framework
+        decouples them, so that developers can work on each separately
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Easy Wallet Integration',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The Collaborative CoinJoin framework is designed to be easy to integrate
+        into any wallet.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by Cash Stack',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Collaborative CoinJoin is based on the <a href="https://cashstack.info"
+        target="_blank">Cash Stack</a>. It uses a combination of blockchain
+        and IPFS technology to function with no single point of failure.
       </>
     ),
   },

@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Collaborative CoinJoin',
+  tagline: 'A framework for innovating on Bitcoin privacy',
+  favicon: 'img/coinjoin-logo.jpeg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -62,12 +62,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/coinjoin-logo.jpeg',
       navbar: {
-        title: 'My Site',
+        title: 'Collaborative CoinJoin',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Collaborative CoinJOin',
+          src: 'img/coinjoin-logo.jpeg',
         },
         items: [
           {
@@ -100,17 +100,9 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'Telegram',
+                href: 'https://t.me/bch_js_toolkit',
+              }
             ],
           },
           {
@@ -122,7 +114,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/bch-coinjoin/ccoinjoin-docs',
               },
             ],
           },
