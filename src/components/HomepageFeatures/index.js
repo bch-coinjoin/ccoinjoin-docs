@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Five Design Components',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/eco_green_hand_icon.svg').default,
     description: (
       <>
         There are five design components to a CoinJoin wallet. This framework
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Easy Wallet Integration',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/wallet-or-pocket-book.svg').default,
     description: (
       <>
         The Collaborative CoinJoin framework is designed to be easy to integrate
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Powered by Cash Stack',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/BitcoinCash.svg').default,
     description: (
       <>
         Collaborative CoinJoin is based on the <a href="https://cashstack.info"
