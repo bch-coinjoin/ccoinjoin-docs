@@ -11,9 +11,39 @@ In this first funding round, all development was executed by [Chris Troutner](ht
 
 ## Funding Campaign 1 - Logs
 
+### 4/3
+- started at 1PM. Stopped at 4PM. = 3 hrs
+
+Wrapping up the first blog post.
+
+Created quick start video.
+
+Added flowchart to documentation.
+
+### 4/2
+- started at 1:15AM. Stopped at 2:15AM. = 1 hr
+- started at 9:30AM. Stopped at 10AM. = 0.5 hr
+- started at 11:15AM. Stopped at 12:15PM. = 1 hr
+- started at 6:15PM. Stopped at 7:15PM. = 1 hr
+
+
+Continued working on the documentation site.
+
+Started creating a summary blog post.
+
+BCH prices
+
+10/20 - 107
+11/4 - 125 16%
+11/27 - 106
+11/8 - 89
+
+Registered ccoinjoin.com and working on standing up website.
+
+
 ### 4/1
--* started at 4:45PM. Stopped at 5:45PM. = 1 hr
--* started at 7:30PM. Stopped at 8:30PM. = 1 hr
+- started at 4:45PM. Stopped at 5:45PM. = 1 hr
+- started at 7:30PM. Stopped at 8:30PM. = 1 hr
 
 I'm officially over the hours I said that I'd put in when I launched the Flipstarter. It's time to wrap up the project.
 
@@ -21,9 +51,9 @@ Working today on creating a Docusaurus site to document the project.
 
 
 ### 3/28
--* started at 6:30AM. Stopped at 10AM. = 3.5 hrs
--* started at 1:15PM. Stopped at 3:15PM. = 2 hrs
--* started at 5PM. Stopped at 6:30PM. = 1.5 hr
+- started at 6:30AM. Stopped at 10AM. = 3.5 hrs
+- started at 1:15PM. Stopped at 3:15PM. = 2 hrs
+- started at 5PM. Stopped at 6:30PM. = 1.5 hr
 
 Continuing to add unit test coverage of the use-case library for colab-coinjoin-api.
 Left off on sendPartiallySignedTx(). That's the next function that needs unit tests.
@@ -35,9 +65,9 @@ In the evening, I worked on the hd-cli-wallet to refine its usage so that others
 - Did some additional testing. Got a great demo ready for tomorrow's PSF TSC meeting.
 
 ### 3/27
--* started at 7AM. Stopped at 11:15AM. = 4.25 hr
--* started at 3:15PM. Stopped at 4:15PM. = 1 hr
--* started at 5:30PM. Stopped at 7PM. = 1.5 hr
+- started at 7AM. Stopped at 11:15AM. = 4.25 hr
+- started at 3:15PM. Stopped at 4:15PM. = 1 hr
+- started at 5:30PM. Stopped at 7PM. = 1.5 hr
 
 Reviewed and made some edits to the workflow documentation.
 
@@ -50,8 +80,8 @@ In the afternoon, I focused primarily on increasing the unit test coverage of th
 
 
 ### 3/26
--* started at 7:15AM. Stopped at 12:30PM. = 5.25 hr
--* started at 2:45PM. Stopped at 4:45PM. = 2 hrs
+- started at 7:15AM. Stopped at 12:30PM. = 5.25 hr
+- started at 2:45PM. Stopped at 4:45PM. = 2 hrs
 
 Continued debugging and development of the coinjoin implementation.
 
@@ -96,8 +126,8 @@ https://github.com/bch-coinjoin/colab-coinjoin-api/pull/11
 
 
 ### 3/25
--* started at 10:15AM. Stopped at 11AM. = 0.75 hr
--* started at 12PM. Stopped at 2:45PM. = 2.75 hr
+- started at 10:15AM. Stopped at 11AM. = 0.75 hr
+- started at 12PM. Stopped at 2:45PM. = 2.75 hr
 
 Successfully passed RPC data to the coordinating peer. Next step is to add an RPC handler so the coordinating peer can respond.
 
@@ -106,7 +136,7 @@ Created RPC handler that can now combine transactions.
 Next step is to dig into the collectSignatures() function and the cjPeers object. The coordinating peer needs to create its own local copy of the cjPeer data for itself. When combineSigs() is called, it needs to know what UTXOs belong to the coordinating peer, and it needs a partially signed TX from the coordinating peer.
 
 ### 3/23
--* started at 8:30AM. Stopped at 10:30AM. = 2 hrs
+- started at 8:30AM. Stopped at 10:30AM. = 2 hrs
 
 Passed partially signed TX from wallet client to colab-coinjoin-api via the /wallet/partiallySignedTx endpoint.
 
@@ -114,7 +144,7 @@ Left off debugging sendPartiallySignedTx() in colab-coinjoin-api. I'm trying to 
 
 
 ### 3/10
--* started at 6:30AM. Stopped at 11:15AM. = 4.75 hr
+- started at 6:30AM. Stopped at 11:15AM. = 4.75 hr
 
 Since I don't want the API server to hold any private keys, the hd-cli-wallet app needs to poll a REST API endpoint every 10 seconds, waiting for an unsigned TX with UTXOs that it needs to sign and pass back.
 
@@ -127,7 +157,7 @@ Next Steps:
 
 
 ### 3/8
--* started at 6:30AM. Stopped at 7:30 = 1 hr
+- started at 6:30AM. Stopped at 7:30 = 1 hr
 
 Testing to see if I can successfully generate and pass an unsigned TX to all peers.
 - Hex is successfully generated. Next step is to for each participant to sign their inputs and pass it back.
@@ -139,8 +169,8 @@ Next steps:
 
 
 ### 3/7
--* started at 6:30AM. Stopped at 7:45AM. = 1.25 hr
--* started at 4:45PM. Stopped at 6:15PM. = 1.5 hr
+- started at 6:30AM. Stopped at 7:45AM. = 1.25 hr
+- started at 4:45PM. Stopped at 6:15PM. = 1.5 hr
 
 I created and debugged the buildCoinJoinTx() function in colab-coinjoin-api. This function aggregates all the data from the initiating node and all peers. All data is now ready to pass on to an adapter library for creating the unsigned CoinJoin TX.
 
@@ -157,7 +187,7 @@ Created an algorithm for generating an unsigned CoinJoin transaction in hex form
 
 
 ### 3/6/23
--* started at 5:30PM. Stopped at 7:45PM. = 2.25 hr
+- started at 5:30PM. Stopped at 7:45PM. = 2.25 hr
 
 Adjusted the timeout when waiting for RPC response to coinjoin initiation.
 
@@ -166,7 +196,7 @@ It looks like the response from the second peer is not making it back to the fir
 Found and fixed the issue that was preventing the peer's response from being processed by the initiator.
 
 ### 3/4/23
--* started at 7AM. Stopped at 9:45AM. = 2.75 hr
+- started at 7AM. Stopped at 9:45AM. = 2.75 hr
 
 I'm at section 6.1 of the spec, where a peer needs to respond with the inputs and outputs. I need to create library functions in hd-cli-wallet that can:
 - Find the most appropriate UTXOs to use in the CoinJoin
@@ -184,7 +214,7 @@ Next steps:
 
 
 ### 3/3
--* started at 7AM. Stopped at 8:45AM. = 1.75 hr
+- started at 7AM. Stopped at 8:45AM. = 1.75 hr
 
 Got the JSON RPC between two peers working. Got one peer to respond to an 'initiate' command to see if they want to start a CoinJoin transaction. I'm ready to start adding code to the response.
 
@@ -196,7 +226,7 @@ There will need to be a transaction fee to pay for gas, which can't be known ahe
 
 
 ### 3/2
--* started at 4:30AM. Stopped at 8AM. = 3.5 hrs
+- started at 4:30AM. Stopped at 8AM. = 3.5 hrs
 
 Using CLI wallet to pass UTXOs via REST API, then that data updates the CoinJoin Announcement pubsub message, allowing peers to find one another and initiate a CoinJoin.
 
@@ -206,7 +236,7 @@ Next steps:
 - I need to copy the JSON RPC workflow from ipfs-bch-wallet-consumer into colab-coinjoin-api. The workflow from here on out expects a response, so it makes a lot of sense to leverage the JSON RPC workflow.
 
 ### 3/1
--* started at 4PM. Stopped at 5PM. = 1 hr
+- started at 4PM. Stopped at 5PM. = 1 hr
 
 Instead of passing mnemonic to the back-end server, I should pass the UTXOs that need to be CoinJoined. The back end can pass a partially signed TX back to the client for signing.
 
@@ -214,7 +244,7 @@ Created new 'coinjoin-single' command in hd-cli-wallet. It passes UTXOs to colab
 
 
 ### 2/28
--* started at 7AM. Stopped at 8:30AM. = 1.5 hr
+- started at 7AM. Stopped at 8:30AM. = 1.5 hr
 
 Fixed broken unit tests.
 
@@ -224,9 +254,9 @@ Started integration wallet libraries into the coinjoin API.
 
 
 ### 2/25
--* started at 5:45AM. Stopped at 6:45AM. = 1 hr
--* started at 7:30AM. Stopped at 8:30AM. =  1 hr
--* started at 10:30AM.  Stopped at 1PM. = 2.5 hr
+- started at 5:45AM. Stopped at 6:45AM. = 1 hr
+- started at 7:30AM. Stopped at 8:30AM. =  1 hr
+- started at 10:30AM.  Stopped at 1PM. = 2.5 hr
 
 Working on announcements and detection of peers who want to engage in CoinJoin txs.
 - Added template for timer controller library to ipfs-service-provider and pulled that change into colab-coinjoin-api.
@@ -243,7 +273,7 @@ Done - A new 'cjPeer' entity should be created to track coinjoin peers.
 
 
 ### 2/24
--* started at 1PM. Stopped at 2PM. = 1 hr
+- started at 1PM. Stopped at 2PM. = 1 hr
 
 Adding 'bch-coinjoin' channel to ipfs-coord. I need the circuit relays to relay this information, so it seems best to put the code in the ipfs-coord library itself.
 
@@ -252,7 +282,7 @@ Copies of colab-coinjoin-api can now make announcements to the bch-coinjoin-001 
 
 
 ### 2/23
--* started at 8AM. Stopped at 8:45AM. Stopped at 10AM. = 1.25 hr
+- started at 8AM. Stopped at 8:45AM. Stopped at 10AM. = 1.25 hr
 
 With the command-line wallet working, now I need to shift focus on the REST API in Electron.js between the backend server and the front end UI.
 
@@ -268,8 +298,8 @@ Got development version front end to request mnemonic for wallet from back end R
 
 
 ### 2/20
--* started at 6:45AM. Stopped at 8:45AM. = 2 hours
--* started at 12:30PM. Stopped at 1:30PM. = 1 hr
+- started at 6:45AM. Stopped at 8:45AM. = 2 hours
+- started at 12:30PM. Stopped at 1:30PM. = 1 hr
 
 Focusing today on wrapping up the update-balance command. Trying to layout the code in a modular way, so that the subfunctions can easily be used by other programs. Also trying to achieve 100% unit test coverage for both the library and command.
 
@@ -287,13 +317,13 @@ Second shift. Started working on refactoring send-bch.
 - Created utxo.js library for utxo managmenet.
 
 ### 2/18
--* started at 5:15AM. Stopped at 6:15AM. = 1 hr
+- started at 5:15AM. Stopped at 6:15AM. = 1 hr
 
 Got most of the update-balance command refactored.
 
 ### 2/13
--* started at 4:15AM. Stopped at 8:15AM. = 4 hrs
--* started at 9:15AM. Stopped at 12:45PM. = 3.5 hr
+- started at 4:15AM. Stopped at 8:15AM. = 4 hrs
+- started at 9:15AM. Stopped at 12:45PM. = 3.5 hr
 
 
 Got the most basic part of the create-wallet command into a separate library, and verified that it can be Browserified into a library for use within a JS browser environment.
@@ -312,8 +342,8 @@ Next steps:
 - Recreate the update-balances command using the new library functions.
 
 ### 2/12
--* started at 12:15PM. Stopped at 12:45PM. = 0.5 hr
--* started at 2PM. Stopped at 2:15PM. = 0.25 hr
+- started at 12:15PM. Stopped at 12:45PM. = 0.5 hr
+- started at 2PM. Stopped at 2:15PM. = 0.25 hr
 
 Before getting to the next steps listed in the last task, I'm going to fix the tests and make sure the hd-cli-wallet library can be browserified and included in the front-end app. It's going to be needed there, and it doesn't make any sense to work on the code if that part doesnt work.
 
@@ -324,7 +354,7 @@ Started refactoring the create-wallet command into its own library.
 
 
 ### 2/9
--* started at 6:30AM. Stopped at 8:30AM. = 2 hrs
+- started at 6:30AM. Stopped at 8:30AM. = 2 hrs
 
 Created v1.4.4 of bch-consumer that accepts an array of addresses for retrieving UTXOs.
 
@@ -338,8 +368,8 @@ Next steps for hd-cli-wallet:
 - Create a new getAddressData() function that uses the new function calls in bch-consumer
 
 ### 2/8
--* started at 5AM. Stopped at 7AM. = 2 hrs
--* started at 11:45AM. Stopped at 3:15PM. = 3.5 hrs
+- started at 5AM. Stopped at 7AM. = 2 hrs
+- started at 11:45AM. Stopped at 3:15PM. = 3.5 hrs
 
 
 Added utxosBulk endoint to ipfs-bch-wallet-service.
@@ -353,8 +383,8 @@ Added bulk UTXO calls to bch-consumer, but still needs unit tests. Took a bit of
 
 
 ### 2/7
--* started at 7AM. Stopped at 7:30AM. = 0.5 hr
--* started at 7:45AM. Stopped at 11:15AM. = 3.5 hr
+- started at 7AM. Stopped at 7:30AM. = 0.5 hr
+- started at 7:45AM. Stopped at 11:15AM. = 3.5 hr
 
 Got fulcrum, full-node, and SLP indexer synced over night. Ready to start working on the upgrades to bch-api, bch-js, and the higher cash stack libs.
 
@@ -364,9 +394,9 @@ Started working on bulk balance and UTXO calls for the Cash Stack.
 - prototyped utxo bulk endpoing in ipfs-bch-wallet-service. Need to add tests
 
 ### 2/6
--* started at 4AM. Stopped at 7:30AM. = 3.5 hr
--* started at 8:30AM. Stopped at 10:45AM. = 2.25 hr
--* started at 12PM. Stopped at 1PM. = 1 hr
+- started at 4AM. Stopped at 7:30AM. = 3.5 hr
+- started at 8:30AM. Stopped at 10:45AM. = 2.25 hr
+- started at 12PM. Stopped at 1PM. = 1 hr
 
 Continued in my effort to try and get Mac to compile the Electronjs app. The MacOS v11 VM that I have kept crashing. I had access to a laptop running MacOS v10, and it refused to build a dependency, asking me to upgrade to v11 or higher.
 
@@ -389,16 +419,16 @@ The HD wallet will need to get *balances*, *transaction history*, and *utxo* for
 My fulcrum indexer corrupted its database while trying to update. I need to stop, restore the backup, and resync.
 
 ### 2/5
--* started at 4PM. Stopped at 4:30 = 0.5 hr
--* started at 5:30. Stopped at 6PM. = 0.5 hr
+- started at 4PM. Stopped at 4:30 = 0.5 hr
+- started at 5:30. Stopped at 6PM. = 0.5 hr
 
 Setting up dev env on the MacOS and trying to compile the Electronjs app.
 
 Got node.js, firefox, and remote login working on the mac.
 
 ### 2/2
--* started at 5:45AM Stopped at 9AM. = 3.25 hr
--* started at 2:15PM. Stopped at 3PM. = 0.75 hr
+- started at 5:45AM Stopped at 9AM. = 3.25 hr
+- started at 2:15PM. Stopped at 3PM. = 0.75 hr
 
 Here is the cross-platform Github Actions script use by jsfiddle:
 https://github.com/electron/fiddle/blob/main/.github/workflows/build.yaml
@@ -416,8 +446,8 @@ Moving on to do the same in Mac.
 
 
 ### 1/31
--* started at 8AM. Stopped at 8:45AM. = 0.75 hr
--* started at 5PM. Stopped at 7PM. = 2 hrs
+- started at 8AM. Stopped at 8:45AM. = 0.75 hr
+- started at 5PM. Stopped at 7PM. = 2 hrs
 
 Trying to build the Electron app on windows. First I need to set up the node.js dev env.
 - Getting errors about symlinks. I need to reset the VM. I think I saw an option for permitting symlinks when I installed node the first time, but did not see it the second time.
@@ -425,7 +455,7 @@ Trying to build the Electron app on windows. First I need to set up the node.js 
 
 
 ### 1/28
--* started at 4:45AM. Stopped at 9AM. = 4.25 hr
+- started at 4:45AM. Stopped at 9AM. = 4.25 hr
 
 Installing windows and Mac OS on VirtualBox, to try and set up my own build environment for those operating systems.
 
@@ -435,7 +465,7 @@ Started installing Windows 11 at 8:15AM.
 
 
 ### 1/27
--* started at 3:45AM. Stopped at 6:45AM. = 3 hrs
+- started at 3:45AM. Stopped at 6:45AM. = 3 hrs
 
 It's very disapointing that adding colab-coinjoin-api caused the Electron build to fail without any errors. Without any feedback, I'm shooting in the dark. The only option to move forward that I can think of is to port the code directly into the Electron app, as opposed to including it as an external dependency. That way I can recreate the core functionality step-by-step and check each step to see if it breaks the build.
 
@@ -454,7 +484,7 @@ https://www.youtube.com/watch?v=cjE5BU_3P0o
 
 
 ### 1/25
--* started at 10:30AM. Stopped at 12:15PM. = 1.75 hr
+- started at 10:30AM. Stopped at 12:15PM. = 1.75 hr
 
 I let the GitHub Actions run as long as possible to try and build the ElectronJS binaries. They were auto-killed after 6 hours. They appear to be hanging. The logs did not show any obvious errors or problems. It just appears to be spinning.
 
@@ -467,8 +497,8 @@ v1.0.2 was the last successful compilation. Major changes since v1.0.2:
 The electron GitHub actions failed to build after adding colab-coinjoin-api as a dependency. Without any logs to debug the issue, I'm poking blind. I'll probably need to create a custom REST API for the Electron app.
 
 ### 1/24
--* started at 6:30AM. Stopped at 8:30AM. = 2 hrs
--* started at 12:30PM. Stopped at 2PM = 1.5 hr
+- started at 6:30AM. Stopped at 8:30AM. = 2 hrs
+- started at 12:30PM. Stopped at 2PM = 1.5 hr
 
 After publishing colab-coinjoin-api to npm, and then including it in the package.json file for electron-bch-coinjoin-wallet, I got errors about Winston. This was a new error that did not happen when I was including the package locally (not from npm).
 
@@ -484,7 +514,7 @@ Tried building the linux deb and rpm packages locally to see if I could find out
 It looks like GitHub Actions is free for public repos. So I'll just let it run.
 
 ### 1/22
--* started at 7:15AM. Stopped at 10:15AM. = 3 hrs
+- started at 7:15AM. Stopped at 10:15AM. = 3 hrs
 
 Continuing research on the 'digest method not supported' error.
 - Trying to reinstall all dependencies with node.js v14, to if this changes the error.
@@ -507,7 +537,7 @@ https://stackoverflow.com/questions/66498374/how-can-i-use-the-real-crypto-modul
 Finally got go-ipfs and ipfs-coord working inside Electron! Whew. Lot of work.
 
 ### 1/21
--* started at 1:15PM. Stopped at 4:15PM. = 3 hrs
+- started at 1:15PM. Stopped at 4:15PM. = 3 hrs
 
 Fixing tests the broke during the work yesterday in colab-coinjoin-api.
 
@@ -522,14 +552,14 @@ The error is 'Digest method not supported' and it seems to be comming from the n
 Advise I can find on the internet says delete node_modules folder and package-lock.json and reinstall to fix the problem. I tried, but that didn't fix it.
 
 ### 1/20
--* started at 6:45AM. Stopped at 9:30AM. = 2.75 hr
+- started at 6:45AM. Stopped at 9:30AM. = 2.75 hr
 
 Wrestled with trying to get the go-ipfs binary to start. Finally got it.
 
 Moved on to integrating ipfs-coord with the program. Got it working.
 
 ### 1/16
--* started at 4AM. Stopped at 6:30AM. = 2.5 hr
+- started at 4AM. Stopped at 6:30AM. = 2.5 hr
 
 Continuing work on creating a `cjs` branch of ipfs-service-provider.
 
@@ -537,9 +567,9 @@ Finished making a CommonJS code refactor of the ipfs-service-provider repository
 
 
 ### 1/15
--* started at 8:30AM. Stopped at 9AM. = 0.5 hr
--* started at 9:45AM. Stopped at 11:15AM. = 1.5 hr
--* started at 1PM. Stopped at 2:30PM. = 1.5 hr
+- started at 8:30AM. Stopped at 9AM. = 0.5 hr
+- started at 9:45AM. Stopped at 11:15AM. = 1.5 hr
+- started at 1PM. Stopped at 2:30PM. = 1.5 hr
 
 Before getting too crazy with the coding of coinjoin-api, I decided first to create an Electron.js app that loads go-ipfs and the coinjoin-api into it.
 
@@ -556,7 +586,7 @@ The goal from here is to launch colab-coinjoin-api from Electron.js. Then launch
 Creating a `cjs` branch for ipfs-service-provider to provide the code in CommonJS format.
 
 ### 1/11
--* started at 3PM. Stopped at 4:15PM. = 1.25 hr
+- started at 3PM. Stopped at 4:15PM. = 1.25 hr
 
 Forking ipfs-service-provider into coinjoin-api. This will be the engine for CoinJoin nodes to find and communicate with one another over IPFS.
 I think once I can simulate three players talking over pubsub, I can then work on the API for collaborating on a CoinJoin. I want that actual CoinJoin logic to be a separate library, but I need to get a good sense of what the API needs to look like.
@@ -578,7 +608,7 @@ Next step is to port the `manageAnnouncement()` function from the timer-controll
 
 
 ### 1/11
--* started at 7AM. Stopped at 8:30AM. = 1.5 hr
+- started at 7AM. Stopped at 8:30AM. = 1.5 hr
 
 Added a README to the BCH CoinJoin GitHub group.
 
@@ -614,15 +644,15 @@ ToDo:
 - Fork the latest oclif boilerplate to create coinjoin-cli
 
 ### 1/9
--* started at 2:30PM. Stopped at 4PM. = 1.5 hr
+- started at 2:30PM. Stopped at 4PM. = 1.5 hr
 
 I tried to install the binary and I got errors. Looking into that.
 
 I fixed the issues, rebuilt, and tested v1.1.4 on both a Linux and Windows machine. Both worked. I'll test a Mac later tonight.
 
 ### 1/7
--* started at 3PM. Stopped at 4PM. = 1 hr
--* started at 5:30PM. Stopped at 8PM. = 2.5 hr
+- started at 3PM. Stopped at 4PM. = 1 hr
+- started at 5:30PM. Stopped at 8PM. = 2.5 hr
 
 Two issues I need to resolve next with the Electron.js app:
 - I need to create a pipeline for publishing Mac, Linux, and Windows binaries.
@@ -639,8 +669,8 @@ The GitHub actions were the way to go. I got the cross-compiled binaries attache
 https://github.com/bch-coinjoin/electron-bch-wallet-single-addr/releases/tag/untagged-de14d13688618a8cf6b7
 
 ### 1/6
--* started at 5:45AM. Stopped at 9AM. = 3.25 hr
--* started at 9:45AM. Stopped at 10:15AM. = 0.5 hr
+- started at 5:45AM. Stopped at 9AM. = 3.25 hr
+- started at 9:45AM. Stopped at 10:15AM. = 0.5 hr
 
 Running through the Learna tutorial for learning how to set up a monorepo.
 - Running through the tutorial resulted in an error without any debugging info. This looks like a trap: a tool that is supposed to make this development easier, but in fact is adding complexity and will be a time suck.
@@ -653,7 +683,7 @@ I was able to get the React app running inside Electron in dev mode. It's a two 
 
 
 ### 1/5/23
--* started at 9:30AM. Stopped at 10:45AM. = 1.25 hr
+- started at 9:30AM. Stopped at 10:45AM. = 1.25 hr
 
 Looking into Capacitor.js before I commit to Electron.js.
 - I looked into this at a suggestion from Stoyan.
@@ -664,7 +694,7 @@ Looking into Learna before I start a new repo for the Electron.js app. This proj
 
 ### 1/2/23
 
--* started at 6PM. Stopped at 8:30PM = 2.5 hr
+- started at 6PM. Stopped at 8:30PM = 2.5 hr
 
 Updated the gist to reflect current status:
 https://gist.github.com/christroutner/da18dabfcb3daf75e8d11d400753f29a
