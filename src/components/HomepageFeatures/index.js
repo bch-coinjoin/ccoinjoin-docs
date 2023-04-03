@@ -24,13 +24,13 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by Cash Stack',
+    title: 'Powered by the Cash Stack',
     Svg: require('@site/static/img/BitcoinCash.svg').default,
     description: (
       <>
         Collaborative CoinJoin is based on the <a href="https://cashstack.info"
         target="_blank">Cash Stack</a>. It uses a combination of blockchain
-        and IPFS technology to function with no single point of failure.
+        and IPFS technology to operate with no single point of failure.
       </>
     ),
   },
