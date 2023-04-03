@@ -15,6 +15,8 @@ To understand why CoinJoin is valuable, you must first understand the concept of
 
 Collaborative CoinJoin is currently in development. There is not yet a graphical user interface (GUI). If you are a JavaScript developer, you can follow the directions below to run your own CoinJoin demonstration, using the command line wallet.
 
+<iframe width="639" height="359" src="https://www.youtube.com/embed/gJEeVWsZDDM" title="Collaborative CoinJoin Quick Start" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### What you'll need
 
 - [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
