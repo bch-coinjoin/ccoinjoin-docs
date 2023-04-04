@@ -9,7 +9,7 @@ This page will walk you through installing the Collaborative CoinJoin demo and p
 
 While most transactions in Bitcoin degrade your privacy, [CoinJoin](https://en.bitcoin.it/wiki/CoinJoin) is a special configuration of transaction inputs and outputs that *improves* your privacy. Collaborative CoinJoin is a framework for BCH wallet software, to allow users to *collaborate* with one another, in order to generate CoinJoin transactions.
 
-To understand why CoinJoin is valuable, you must first understand the concept of [UTXOs](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06.asciidoc#transaction-outputs-and-inputs). After several spends, an HD wallet will end up with several small UTXOs that have *low monetary value, but high information content*. The information in those UTXOs can be used to deanonymize you. A CoinJoin transaction allows you to safely consolidate those UXTOs into a single *high monetary value, but low information content* UTXO, this preserving your privacy.
+To understand why CoinJoin is valuable, you must first understand the concept of [UTXOs](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06.asciidoc#transaction-outputs-and-inputs). After several spends, an HD wallet will end up with several small UTXOs that have *low monetary value, but high information content*. The information in those UTXOs can be used to deanonymize you. A CoinJoin transaction allows you to safely consolidate those UXTOs into a single *high monetary value, but low information content* UTXO, thus preserving your privacy.
 
 ## Getting Started
 
